@@ -128,7 +128,7 @@ export const knowledge = [
     image: "react.png",
   },
   {
-    tecnology: "PostgresSQL",
+    tecnology: "PostgresSql",
     image: "postgres.png",
   },
   {

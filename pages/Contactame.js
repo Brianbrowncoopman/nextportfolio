@@ -17,7 +17,7 @@ const Contactame = () => {
               Nombre / First Name
             </label>
             <input
-              className="form-control border border-primary"
+              className="form-control border border-primary bg-indigo-custom-c"
               id="firstName"
               placeholder="Nombre / First Name"
               required
@@ -29,7 +29,7 @@ const Contactame = () => {
               Apellido / Last Name
             </label>
             <input
-              className="form-control border-primary"
+              className="form-control border-primary bg-indigo-custom-c"
               id="secondName"
               placeholder="Apellido / Last Name"
               required
@@ -42,7 +42,7 @@ const Contactame = () => {
             </label>
             <input
               type="email"
-              className="form-control border-primary"
+              className="form-control border-primary bg-indigo-custom-c"
               id="emailInfo"
               placeholder="usuario@user.com"
               required
@@ -55,7 +55,7 @@ const Contactame = () => {
             </label>
             <input
               type="number"
-              className="form-control border-primary"
+              className="form-control border-primary bg-indigo-custom-c"
               id="phoneNumber"
               placeholder="+56 -987-654-321"
               name="numero de telefono"
@@ -66,7 +66,7 @@ const Contactame = () => {
               Comentarios, preguntas?
             </label>
             <textarea
-              className="form-control border-primary"
+              className="form-control border-primary bg-indigo-custom-c"
               id="comments"
               rows="3"
               required

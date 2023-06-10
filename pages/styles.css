@@ -1,6 +1,6 @@
 
 .bg-indigo-custom {
-  background-color: #4b0082;
+  background-color: #d3cecf;
 }
 
 .bg-indigo-custom-a{
@@ -8,7 +8,11 @@
 }
 
 .bg-indigo-custom-b{
-  background-color: #bed1ce96;
+  background-color: #7f8ee496;
+}
+
+.bg-indigo-custom-c {
+  background-color: #ede9f7;
 }
 
 .text-indigo-custom {
