@@ -164,3 +164,42 @@ export const knowledge = [
     image: "sass.png",
   },
 ];
+
+export const juegos = [
+  {
+    gameName: "Candy",
+    page: "https://candy-dun.vercel.app/",
+    gameImage: "candy.png",
+    description: "React.js",
+  },
+  {
+    gameName: "Pacman",
+    page: "https://pacman-omega.vercel.app/",
+    gameImage: "pacman.png",
+    description: "JavaScript",
+  },
+  {
+    gameName: "Stars",
+    page: "https://bomber-two.vercel.app/",
+    gameImage: "starts.png",
+    description: "Phaser.js",
+  },
+  {
+    gameName: "Nave",
+    page: "https://nave-pi.vercel.app/",
+    gameImage: "nave.png",
+    description: "Phaser.js",
+  },
+  {
+    gameName: "SpaceInvaders",
+    page: "https://spaceinvaders-beta.vercel.app/",
+    gameImage: "space.png",
+    description: "JavaScript.js",
+  },
+  {
+    gameName: "Mario",
+    page: "https://mariopaaa.vercel.app/",
+    gameImage: "mario.png",
+    description: "JavaScript.js",
+  },
+];
