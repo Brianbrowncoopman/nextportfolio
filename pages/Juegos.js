@@ -7,7 +7,7 @@ import Link from "next/link";
 const Juegos = () => {
   return (
     <Layout>
-      <div className="h-100 bg-indigo-custom-b">
+      <div className=" w-90 h-100   m-4 p-2 bg-indigo-custom-b  border-primary">
         <h1>Juegos</h1>
         <div className="container">
           <div className="row">
@@ -16,7 +16,7 @@ const Juegos = () => {
                 <div className="card rounded-5 shadow-lg p-3 mb-1 bg-body-tertiary   h-100">
                   {/*<h5 className="card-title mt-2">{gameName}</h5>*/}
 
-                  <button type="button" class="btn btn-outline-info">
+                  <button type="button" className="btn btn-outline-info">
                     <Link
                       href={page}
                       className="text-decoration-none fw-bold text-reset"

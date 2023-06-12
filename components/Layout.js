@@ -1,10 +1,13 @@
 import React, { useEffect } from "react";
 import { Navbar } from "react-bootstrap";
 import NavbarC from "./NavbarC";
+
 import Footer from "./Footer";
 import Head from "next/head";
 import { useRouter } from "next/router";
 import NProgress from "nprogress";
+import "../pages/styles.css";
+import Contact from "./Contact";
 
 const Layout = ({ children, footer = true }) => {
   const router = useRouter();
@@ -31,8 +34,11 @@ const Layout = ({ children, footer = true }) => {
   return (
     <div className="d-flex flex-column min-vh-100">
       <NavbarC />
+      <Contact />
 
-      <main className="  flex-grow-1 text-center   p-2 ">{children}</main>
+      <main className="  flex-grow-1 text-center  bg-indigo-custom-a  ">
+        {children}
+      </main>
 
       {footer && (
         <footer className="bg-dark text-light text-center">

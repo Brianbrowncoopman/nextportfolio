@@ -4,7 +4,7 @@
 }
 
 .bg-indigo-custom-a{
-  background-color: #119e40;
+  background-color: #9abea6;
 }
 
 .bg-indigo-custom-b{
@@ -19,3 +19,27 @@
   color: #4b0082;
   
 }
+
+.knowledge-image {
+  max-width: 50%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 576px) {
+  .responsive-card {
+    transform: scale(0.5); /* Ajusta el tamaño de la tarjeta para pantallas pequeñas */
+  }
+}
+
+@media (min-width: 577px) and (max-width: 992px) {
+  .responsive-card {
+    transform: scale(0.8); /* Ajusta el tamaño de la tarjeta para pantallas medianas */
+  }
+}
+
+
+
+
+
+

@@ -2,7 +2,7 @@ import Layout from "@/components/Layout";
 import React from "react";
 import "./styles.css";
 
-const Proyectos = () => {
+const Certificados = () => {
   return (
     <Layout>
       <div className=" w-90 h-100   m-4 p-2 bg-indigo-custom-b  border-primary">
@@ -11,26 +11,26 @@ const Proyectos = () => {
           <div className="carousel-inner">
             <div className="carousel-item active">
               <div className="d-flex flex-column align-items-center">
-                <img src="css.png" className="carousel-image" alt="..." />
-                <p className="carousel-text">Texto debajo de la imagen 1</p>
+                <img src="larnu.png" className="carousel-image" alt="..." />
+                <p className="carousel-text">Larnu || Full Stack</p>
               </div>
             </div>
             <div className="carousel-item">
               <div className="d-flex flex-column align-items-center">
-                <img src="git.png" className="carousel-image" alt="..." />
-                <p className="carousel-text">Texto debajo de la imagen 2</p>
+                <img src="jp1.png" className="carousel-image" alt="..." />
+                <p className="carousel-text">JProg || Js 1</p>
               </div>
             </div>
             <div className="carousel-item">
               <div className="d-flex flex-column align-items-center">
-                <img src="js.png" className="carousel-image" alt="..." />
-                <p className="carousel-text">Texto debajo de la imagen 3</p>
+                <img src="jp2.png" className="carousel-image" alt="..." />
+                <p className="carousel-text">JProg || Js 2</p>
               </div>
             </div>
             <div className="carousel-item">
               <div className="d-flex flex-column align-items-center">
-                <img src="mui.png" className="carousel-image" alt="..." />
-                <p className="carousel-text">Texto debajo de la imagen 4</p>
+                <img src="jp3.png" className="carousel-image" alt="..." />
+                <p className="carousel-text">JProg || Phaser.js</p>
               </div>
             </div>
           </div>
@@ -64,4 +64,4 @@ const Proyectos = () => {
   );
 };
 
-export default Proyectos;
+export default Certificados;

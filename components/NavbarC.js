@@ -53,6 +53,11 @@ const NavbarC = () => (
               <div className="nav-link">Proyectos</div>
             </Link>
           </li>
+          <li className="nav-item">
+            <Link href="/Certificados" className="text-decoration-none">
+              <div className="nav-link">Certificados</div>
+            </Link>
+          </li>
           <li className="nav-item ">
             <Link href="/Contactame " className="text-decoration-none">
               <div className="nav-link ">Contactame</div>

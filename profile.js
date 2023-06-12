@@ -2,38 +2,23 @@ export const skills = [
   {
     skill: "Html5",
     percentage: 100,
+    image: "html.png",
   },
   {
     skill: "Css",
     percentage: 100,
-  },
-  {
-    skill: "Saas",
-    percentage: 100,
+    image: "css.png",
   },
   {
     skill: "JavaScript",
     percentage: 100,
+    image: "js.png",
   },
-  {
-    skill: "Node.js",
-    percentage: 100,
-  },
-  {
-    skill: "React.js",
-    percentage: 100,
-  },
+
   {
     skill: "Next.js",
     percentage: 100,
-  },
-  {
-    skill: "Phaser",
-    percentage: 100,
-  },
-  {
-    skill: "Github",
-    percentage: 100,
+    image: "next.png",
   },
 ];
 
@@ -70,35 +55,46 @@ export const experiences = [
 
 export const proyects = [
   {
-    name: "React",
-    description: "loer erefv xx vzsg c  hvsth t h ",
-    image: "acordeon.jpg",
+    name: "Clima APP",
+    description: "React.js || OpenApi",
+    image: "climapp.png",
+    page: "https://app-clima-one-wine.vercel.app/",
   },
   {
-    name: "React 1",
-    description: "loer erefv xx vzsg c  hvsth t h ",
-    image: "acordeon.jpg",
+    name: "Buscador de peliculas",
+    description: "React.js || Tailwind",
+    image: "peliculas.png",
+    page: "https://pelicul-app.vercel.app/",
   },
   {
-    name: "React 2",
-    description: "loer erefv xx vzsg c  hvsth t h ",
-    image: "acordeon.jpg",
+    name: "Memorice",
+    description: "React.js",
+    image: "memorice.png",
+    page: "https://memorice-sonido-n3pa.vercel.app/",
   },
   {
-    name: "React 3",
-    description:
-      "loer erefv xx vzsg c  hvsth t hloer erefv xx vzsg c  hvsth t hloer erefv xx vzsg c  hvsth t hloer erefv xx vzsg c  hvsth t h ",
-    image: "acordeon.jpg",
+    name: "Lista de tareas",
+    description: "React.js",
+    image: "tareas.png",
+    page: "https://listatareas.vercel.app/",
   },
   {
-    name: "React 4",
+    name: "Comentarios",
     description: "loer erefv xx vzsg c  hvsth t h ",
-    image: "acordeon.jpg",
+    image: "comentarios.png",
+    page: "https://sistcomentarios.vercel.app/",
   },
   {
-    name: "React 5",
-    description: "loer erefv xx vzsg c  hvsth t h ",
-    image: "acordeon.jpg",
+    name: "To Do",
+    description: "React.js ",
+    image: "todo.png",
+    page: "https://nextcrud-theta.vercel.app/new",
+  },
+  {
+    name: "API",
+    description: "Next.js ",
+    image: "api.png",
+    page: "https://apinext-snowy.vercel.app/",
   },
 ];
 
@@ -162,6 +158,10 @@ export const knowledge = [
   {
     tecnology: "Sass",
     image: "sass.png",
+  },
+  {
+    tecnology: "Express.js",
+    image: "express.png",
   },
 ];
 

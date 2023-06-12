@@ -10,7 +10,7 @@ const Github = ({ user, statusCode }) => {
   //console.log(props);
   return (
     <Layout footer={true}>
-      <div className=" h-100 bg-indigo-custom-b">
+      <div className="  w-90 h-100   m-4 p-2 bg-indigo-custom-b  border-primary">
         <div className="row ">
           <div className="col-md-4 offset-md-4 ">
             <div className="card car-body text-center ">

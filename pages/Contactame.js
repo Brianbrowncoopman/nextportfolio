@@ -1,11 +1,12 @@
 import Layout from "@/components/Layout";
 import React from "react";
 import "./styles.css";
+import Link from "next/link";
 
 const Contactame = () => {
   return (
     <Layout>
-      <div className="container  h-100   bg-indigo-custom-b">
+      <div className=" w-90 h-100   m-4 p-2 bg-indigo-custom-b  border-primary">
         <h1>Contactame</h1>
         <form
           action="https://formsubmit.co/brianbrowncoopman@gmail.com"
@@ -77,6 +78,16 @@ const Contactame = () => {
             <button type="submit" className="btn btn-primary">
               Submit
             </button>
+          </div>
+          <div className="col-md-12 text-center">
+            <Link
+              href="/cv.pdf"
+              passHref
+              className="btn btn-secondary"
+              download
+            >
+              Descargar Archivo
+            </Link>
           </div>
         </form>
       </div>

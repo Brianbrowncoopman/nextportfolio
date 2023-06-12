@@ -9,7 +9,7 @@ console.log(skills, experiences);
 
 const Index = () => (
   <Layout>
-    <div className="bg-indigo-custom-b">
+    <div className="  w-90 h-100%   m-4 p-2 bg-indigo-custom-b  border-primary">
       {/*header card*/}
       <header className="row ">
         <div className="col-md-12 ">
@@ -32,10 +32,20 @@ const Index = () => (
                   blablaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
                   blablaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
                 </p>
+                <div className="column">
+                  <Link
+                    href="/cv.pdf"
+                    passHref
+                    className="btn btn-primary"
+                    download
+                  >
+                    Descargar Archivo
+                  </Link>
 
-                <Link href="/Contactame" className=" btn btn-outline-light">
-                  Contactame
-                </Link>
+                  <Link href="/Contactame" className=" btn btn-outline-light">
+                    Contactame
+                  </Link>
+                </div>
               </div>
             </div>
           </div>
@@ -44,28 +54,36 @@ const Index = () => (
       {/* second section */}
       {/*skills */}
       <div className="row py-3">
-        <div className="col-md-4">
+        <div className="col-md-2">
           <div className="card bg-light">
-            <div className="card-body">
+            <div className="card-body ">
               <h1>Skills</h1>
-
-              {skills.map(({ skill, percentage }, i) => (
-                <div className="py-3" key={i}>
-                  <h5>{skill}</h5>
-                  <div className="progress">
-                    <div
-                      className="progress-bar"
-                      role="progressbar"
-                      style={{ width: `${percentage}%` }}
-                    ></div>
+              <div className="row">
+                {skills.map(({ skill, percentage, image }, i) => (
+                  <div className=" card p-3 border-bottom" key={i}>
+                    <h5>{skill}</h5>
+                    <Image
+                      src={`/${image}`}
+                      className="card-img"
+                      width={100}
+                      height={100}
+                      alt="..."
+                    />
+                    <div className="progress">
+                      <div
+                        className="progress-bar bg-secondary"
+                        role="progressbar"
+                        style={{ width: `${percentage}%` }}
+                      ></div>
+                    </div>
                   </div>
-                </div>
-              ))}
+                ))}
+              </div>
             </div>
           </div>
         </div>
         {/*   experiencias */}
-        <div className="col-md-8">
+        <div className="col-md-10">
           <div className="card bg-light">
             <div className="card-body">
               <h1>Experiencia</h1>
@@ -103,21 +121,26 @@ const Index = () => (
         <div className="card card-body bg-dark">
           <div className="row container-fluid">
             <div className="col-md-12">
-              <h1 className="text-center text-light">Portfolio</h1>
+              <h1 className="text-center text-light">Proyectos</h1>
             </div>
 
-            {proyects.map(({ name, description, image }, i) => (
+            {proyects.map(({ name, description, page, image }, i) => (
               <div className="col-md-4 p-2" key={i}>
-                <div className="card h-100">
+                <div className="card h-100 ">
                   <div className="overflow">
                     <img src={`/${image}`} className="card-img-top" alt="..." />
                   </div>
                   <div className="card-body">
                     <h5 className="card-title">{name}</h5>
                     <p className="card-text">{description}</p>
-                    <Link href="/Proyectos" className=" btn btn-outline-dark">
-                      Conoce mas
-                    </Link>
+                    <div className="row m-2">
+                      <Link href="/Proyectos" className=" btn btn-outline-dark">
+                        Conoce mas
+                      </Link>
+                      <Link href={page} className="btn btn-outline-dark">
+                        Ir a la app
+                      </Link>
+                    </div>
                   </div>
                 </div>
               </div>
