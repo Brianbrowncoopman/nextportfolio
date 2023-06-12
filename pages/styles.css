@@ -4,15 +4,27 @@
 }
 
 .bg-indigo-custom-a{
-  background-color: #9abea6;
+  background-color: #80af90;
 }
 
 .bg-indigo-custom-b{
-  background-color: #bac0df96;
+  background-color: #5461a396;
 }
 
 .bg-indigo-custom-c {
   background-color: #ede9f7;
+}
+
+.bg-indigo-custom-d{
+  background-color: #575255;
+}
+
+.bg-indigo-custom-e{
+  background-color: #575255;
+}
+
+.bg-indigo-custom-f{
+  background-color: #978a92;
 }
 
 .text-indigo-custom {

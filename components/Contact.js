@@ -36,7 +36,7 @@ const Contact = () => {
             </li>
             <li className="nav-item">
               <Link
-                href="https://www.linkedin.com/in/tuperfil"
+                href="https://www.linkedin.com/in/brianbrowncoopman/"
                 passHref
                 className="nav-link"
                 target="_blank"
