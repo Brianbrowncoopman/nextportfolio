@@ -10,18 +10,24 @@ const Github = ({ user, statusCode }) => {
   //console.log(props);
   return (
     <Layout footer={true}>
-      <div className="  w-90 h-100   m-4 p-2 bg-indigo-custom-b  border-primary">
+      <div className="  w-90 h-95   m-3 p-4 bg-indigo-custom-b  border border-1 rounded">
         <div className="row ">
           <div className="col-md-4 offset-md-4 ">
-            <div className="card car-body text-center ">
+            <div className="card car-body text-center bg-indigo-custom-a  border border-1 rounded">
               <h1>{user.name}</h1>
-              <img src={user.avatar_url} alt="" />
-              <p>{user.bio}</p>
+              <img
+                src={user.avatar_url}
+                alt=""
+                className=" p-2 m-2 rounded-circle border border-2"
+              />
+              <p className="bg-indigo-custom-d border border-1 m-2 rounded">
+                {user.bio}
+              </p>
 
               <a
                 href={user.html_url}
                 target="_blanc"
-                className="btn btn-outline-secondary"
+                className="btn btn-outline-secondary bg-indigo-custom-e border border-2 p-2 m-2"
               >
                 Ir a Github
               </a>

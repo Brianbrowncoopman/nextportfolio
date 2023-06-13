@@ -27,7 +27,7 @@
   background-color: #978a92;
 }
 
-.text-indigo-custom {
+.text-indigo-custom-g {
   color: #4b0082;
   
 }
@@ -37,6 +37,10 @@
   height: auto;
   margin-bottom: 10px;
 }
+
+
+
+
 
 @media (max-width: 576px) {
   .responsive-card {

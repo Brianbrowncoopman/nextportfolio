@@ -4,21 +4,32 @@ import Image from "next/image";
 import { skills, experiences, proyects } from "../profile";
 import Link from "next/link";
 import "./styles.css";
+import NavbarC from "@/components/NavbarC";
 
 console.log(skills, experiences);
 
 const Index = () => (
   <Layout>
-    <div className="  w-90 h-100%   m-4 p-2 bg-indigo-custom-b  border-primary">
+    <div className="  w-90 h-95   m-3 p-4 bg-indigo-custom-b  border border-1 rounded">
       {/*header card*/}
       <header className="row ">
         <div className="col-md-12 ">
           <div className="card card-body bg-secondary text-light">
             <div className="row">
               <div className="col-md-3">
-                <img src="/perfilp.jpg" alt="" className="img-fluid" />
+                <img
+                  src="/perfilp.jpg"
+                  alt=""
+                  className="img-fluid  p-1 mt-4 mb-5 border border-1 rounded"
+                />
+                <br />
+                <img
+                  src="/perfilp.jpg"
+                  alt=""
+                  className="img-fluid p-1 m-2 mt-5  rounded-circle border border-2"
+                />
               </div>
-              <div className="col-md-9 p-2 bg-indigo-custom-e rounded">
+              <div className="col-md-9 p-2 bg-indigo-custom-e  border border-1 rounded">
                 <h1>Brian Brown</h1>
                 <h3>FullStack Developer</h3>
                 <p className="text-center">
@@ -86,24 +97,26 @@ const Index = () => (
       {/* second section */}
       {/*skills */}
       <div className="row px-2 py-2">
-        <div className="col-md-2">
-          <div className="card bg-light">
-            <div className="card-body bg-indigo-custom-e rounded">
+        <div className="col-md-2 ">
+          <div className="card bg-light ">
+            <div className="card-body bg-indigo-custom-e  border border-1">
               <h1>Skills</h1>
               <div className="row ">
                 {skills.map(({ skill, percentage, image }, i) => (
                   <div
-                    className=" card p-3 border-bottom bg-indigo-custom-f"
+                    className=" card p-4 text-center  bg-indigo-custom-f  border border-1 mb-1 rounded "
                     key={i}
                   >
                     <h5>{skill}</h5>
-                    <Image
-                      src={`/${image}`}
-                      className="card-img"
-                      width={100}
-                      height={100}
-                      alt="..."
-                    />
+                    <div className="d-flex justify-content-center">
+                      <Image
+                        src={`/${image}`}
+                        className="card-img-over"
+                        width={100}
+                        height={100}
+                        alt="..."
+                      />
+                    </div>
                     <div className="progress">
                       <div
                         className="progress-bar bg-secondary"
@@ -118,7 +131,7 @@ const Index = () => (
           </div>
         </div>
         {/*   experiencias */}
-        <div className="col-md-10 bg-indigo-custom-e p-2  rounded">
+        <div className="col-md-10 bg-indigo-custom-e p-2 border border-1 rounded">
           <div className="card  bg-indigo-custom-f ">
             <div className="card-body text-center">
               <h1>Experiencia</h1>
@@ -134,22 +147,24 @@ const Index = () => (
                   </li>
                 ))}
               </ul>
-              <div className="container  ">
-                <div className="row col-md-12">
-                  <div className=" m-2 p-2 ">
-                    <div className="card bg-indigo-custom-e">
-                      <Link
-                        href="/Experiencia"
-                        className="btn btn-outline-light"
-                      >
-                        Experiencias
-                      </Link>
-                      <Link
-                        href="/Contactame"
-                        className="btn btn-outline-light"
-                      >
-                        Contactame
-                      </Link>
+              <div className="container">
+                <div className="row justify-content-center">
+                  <div className="col-md-4  ">
+                    <div className="card bg-indigo-custom-e p-2 border border-1">
+                      <div className="d-flex justify-content-center">
+                        <Link
+                          href="/Experiencia"
+                          className="btn btn-outline-light bg-indigo-custom-a m-1"
+                        >
+                          Experiencias
+                        </Link>
+                        <Link
+                          href="/Contactame"
+                          className="btn btn-outline-light bg-indigo-custom-a m-1"
+                        >
+                          Contactame
+                        </Link>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -159,31 +174,41 @@ const Index = () => (
         </div>
       </div>
     </div>
-    {/*portfolio*/}
-    <div className="row">
-      <div className="col-md-12">
-        <div className="card card-body bg-dark">
-          <div className="row container-fluid">
+    {/*proyectos*/}
+    <div className="row px-2">
+      <div className="col-md-12 bg-indigo-custom-e p-2  rounded">
+        <div className="card  bg-indigo-custom-f ">
+          <div className="row card-body text-center">
             <div className="col-md-12">
               <h1 className="text-center text-light">Proyectos</h1>
             </div>
 
             {proyects.map(({ name, description, page, image }, i) => (
-              <div className="col-md-4 p-2" key={i}>
-                <div className="card h-100 ">
+              <div className="col-md-3 p-2" key={i}>
+                <div className="card h-100 bg-indigo-custom-d">
                   <div className="overflow">
-                    <img src={`/${image}`} className="card-img-top" alt="..." />
+                    <img
+                      src={`/${image}`}
+                      className="card-img-top p-2 rounded object-fit: cover"
+                      alt="..."
+                    />
                   </div>
-                  <div className="card-body">
-                    <h5 className="card-title">{name}</h5>
-                    <p className="card-text">{description}</p>
-                    <div className="row m-2">
-                      <Link href="/Proyectos" className=" btn btn-outline-dark">
-                        Conoce mas
-                      </Link>
-                      <Link href={page} className="btn btn-outline-dark">
-                        Ir a la app
-                      </Link>
+                  <div className="card-body bg-indigo-custom-b border border-1 m-2 rounded">
+                    <div className="bg-indigo-custom-a border border-1 rounded ">
+                      <h5 className="card-title">{name}</h5>
+                      <p className="card-text">{description}</p>
+
+                      <div className="row m-2">
+                        <Link
+                          href="/Proyectos"
+                          className=" btn btn-outline-dark"
+                        >
+                          Conoce mas
+                        </Link>
+                        <Link href={page} className="btn btn-outline-dark mb-2">
+                          Ir a la app
+                        </Link>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -191,13 +216,14 @@ const Index = () => (
             ))}
           </div>
           <div className="text-center mt-4">
-            <Link href="/Proyectos" className="btn btn-outline-light">
+            <Link href="/Proyectos" className="btn btn-outline-dark mb-2">
               Mas Proyectos
             </Link>
           </div>
         </div>
       </div>
     </div>
+    <NavbarC />
   </Layout>
 );
 

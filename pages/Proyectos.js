@@ -5,7 +5,7 @@ import "./styles.css";
 const Proyectos = () => {
   return (
     <Layout>
-      <div className=" w-90 h-100   m-4 p-2 bg-indigo-custom-b  border-primary">
+      <div className=" w-90 h-95   m-3 p-4 bg-indigo-custom-b  border border-1 rounded">
         <h2>Proyectos</h2>
         <div id="carouselExampleFade" className="carousel slide carousel-fade">
           <div className="carousel-inner">

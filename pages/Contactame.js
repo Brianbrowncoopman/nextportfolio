@@ -6,19 +6,19 @@ import Link from "next/link";
 const Contactame = () => {
   return (
     <Layout>
-      <div className=" w-90 h-100   m-4 p-2 bg-indigo-custom-b  border-primary">
+      <div className=" w-90 h-95   m-3 p-4 bg-indigo-custom-b border border-1 rounded">
         <h1>Contactame</h1>
         <form
           action="https://formsubmit.co/brianbrowncoopman@gmail.com"
           method="POST"
-          className="row g-3"
+          className="row g-3 "
         >
           <div className="col-md-6">
-            <label for="firstName" className="form-label border ">
+            <label for="firstName" className=" h4 form-label  ">
               Nombre / First Name
             </label>
             <input
-              className="form-control border border-primary bg-indigo-custom-c"
+              className="  form-control border border-primary bg-indigo-custom-c"
               id="firstName"
               placeholder="Nombre / First Name"
               required
@@ -26,7 +26,7 @@ const Contactame = () => {
             />
           </div>
           <div className="col-md-6">
-            <label for="secondName" className="form-label ">
+            <label for="secondName" className=" h4 form-label ">
               Apellido / Last Name
             </label>
             <input
@@ -38,7 +38,7 @@ const Contactame = () => {
             />
           </div>
           <div className="col-md-8">
-            <label for="emailInfo" className="form-label text-center">
+            <label for="emailInfo" className=" h4 form-label text-center">
               E-mail
             </label>
             <input
@@ -51,7 +51,7 @@ const Contactame = () => {
             />
           </div>
           <div className="col-md-4">
-            <label for="phoneNumber" className="form-label">
+            <label for="phoneNumber" className=" h4 form-label">
               Numero de telefono /Phone Number
             </label>
             <input
@@ -63,7 +63,7 @@ const Contactame = () => {
             />
           </div>
           <div className="col-md-12">
-            <label for="comments" className="form-label">
+            <label for="comments" className=" h4 form-label">
               Comentarios, preguntas?
             </label>
             <textarea
@@ -75,7 +75,10 @@ const Contactame = () => {
             />
           </div>
           <div className="col-md-12">
-            <button type="submit" className="btn btn-primary">
+            <button
+              type="submit"
+              className="btn btn-secondary bg-indigo-custom-a"
+            >
               Submit
             </button>
           </div>
@@ -83,7 +86,7 @@ const Contactame = () => {
             <Link
               href="/cv.pdf"
               passHref
-              className="btn btn-secondary"
+              className="btn btn-secondary bg-indigo-custom-a"
               download
             >
               Descargar Archivo
