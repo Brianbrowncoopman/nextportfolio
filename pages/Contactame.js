@@ -79,7 +79,7 @@ const Contactame = () => {
               type="submit"
               className="btn btn-secondary bg-indigo-custom-a"
             >
-              Submit
+              Enviar
             </button>
           </div>
           <div className="col-md-12 text-center">
@@ -89,7 +89,7 @@ const Contactame = () => {
               className="btn btn-secondary bg-indigo-custom-a"
               download
             >
-              Descargar Archivo
+              Descargar C/V
             </Link>
           </div>
         </form>
