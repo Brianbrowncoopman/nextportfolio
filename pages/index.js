@@ -4,7 +4,6 @@ import Image from "next/image";
 import { skills, experiences, proyects } from "../profile";
 import Link from "next/link";
 import "./styles.css";
-import NavbarC from "@/components/NavbarC";
 
 console.log(skills, experiences);
 
@@ -75,17 +74,21 @@ const Index = () => (
                   oportunidades de colaboración. ¡Espero tener la oportunidad de
                   trabajar juntos y contribuir al éxito de tu empresa!
                 </p>
-                <div className="column">
+                <div className="column col-md-12">
                   <Link
                     href="/cv.pdf"
                     passHref
-                    className="btn btn-primary"
+                    className="btn btn-outline-light  bg-indigo-custom-a col-md-5 mb-1"
                     download
                   >
-                    Descargar Archivo
+                    Descargar C/V
                   </Link>
+                  <br />
 
-                  <Link href="/Contactame" className=" btn btn-outline-light">
+                  <Link
+                    href="/Contactame"
+                    className=" btn btn-outline-light  bg-indigo-custom-b col-md-5"
+                  >
                     Contactame
                   </Link>
                 </div>
@@ -160,7 +163,7 @@ const Index = () => (
                         </Link>
                         <Link
                           href="/Contactame"
-                          className="btn btn-outline-light bg-indigo-custom-a m-1"
+                          className="btn btn-outline-light bg-indigo-custom-b m-1"
                         >
                           Contactame
                         </Link>
@@ -205,7 +208,10 @@ const Index = () => (
                         >
                           Conoce mas
                         </Link>
-                        <Link href={page} className="btn btn-outline-dark mb-2">
+                        <Link
+                          href={page}
+                          className="btn btn-outline-dark bg-indigo-custom-b mb-2"
+                        >
                           Ir a la app
                         </Link>
                       </div>
@@ -223,7 +229,6 @@ const Index = () => (
         </div>
       </div>
     </div>
-    <NavbarC />
   </Layout>
 );
 

@@ -8,7 +8,7 @@ import { FaPhone } from "react-icons/fa";
 
 const Contact = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav className="navbar navbar-expand-lg navbar-dark bg-dark py-0">
       <div className="container text-center">
         <button
           className="navbar-toggler"
@@ -21,8 +21,8 @@ const Contact = () => {
         >
           <span className="navbar-toggler-icon"></span>
         </button>
-        <div className="collapse navbar-collapse " id="navbarNav">
-          <ul className="navbar-nav">
+        <div className="collapse navbar-collapse" id="navbarNav">
+          <ul className="navbar-nav ml-auto">
             <li className="nav-item">
               <Link
                 href="https://wa.me/+56951397667"

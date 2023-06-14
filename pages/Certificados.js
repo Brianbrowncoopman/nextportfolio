@@ -13,7 +13,7 @@ const Certificados = () => {
               <div className="d-flex flex-column align-items-center">
                 <img
                   src="larnu.png"
-                  className="carousel-image border border-3 rounded"
+                  className="carousel-image border border-3 rounded img-fluid"
                   alt="..."
                 />
                 <p className="carousel-text">Larnu || Full Stack</p>
@@ -23,7 +23,7 @@ const Certificados = () => {
               <div className="d-flex flex-column align-items-center">
                 <img
                   src="jp1.png"
-                  className="carousel-image border border-3 rounded"
+                  className="carousel-image border border-3 rounded img-fluid"
                   alt="..."
                 />
                 <p className="carousel-text">JProg || Js 1</p>
@@ -33,7 +33,7 @@ const Certificados = () => {
               <div className="d-flex flex-column align-items-center">
                 <img
                   src="jp2.png"
-                  className="carousel-image border border-3 rounded"
+                  className="carousel-image border border-3 rounded img-fluid"
                   alt="..."
                 />
                 <p className="carousel-text">JProg || Js 2</p>
@@ -43,7 +43,7 @@ const Certificados = () => {
               <div className="d-flex flex-column align-items-center">
                 <img
                   src="jp3.png"
-                  className="carousel-image border border-3 rounded"
+                  className="carousel-image border border-3 rounded img-fluid"
                   alt="..."
                 />
                 <p className="carousel-text">JProg || Phaser.js</p>

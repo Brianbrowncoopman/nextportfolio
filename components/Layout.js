@@ -39,7 +39,8 @@ const Layout = ({ children, footer = true }) => {
       <main className="  flex-grow-1 text-center  bg-indigo-custom-a  ">
         {children}
       </main>
-
+      <NavbarC />
+      <Contact />
       {footer && (
         <footer className="bg-dark text-light text-center">
           <div className="container p-4">

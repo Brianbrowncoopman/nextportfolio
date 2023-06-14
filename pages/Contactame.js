@@ -9,7 +9,7 @@ const Contactame = () => {
       <div className=" w-90 h-95   m-3 p-4 bg-indigo-custom-b border border-1 rounded">
         <h1>Contactame</h1>
         <form
-          action=" 948ae6566c14e93ca14b83b0a6dcb62b"
+          action="https://formsubmit.co/brianbrowncoopman@gmail.com"
           method="POST"
           className="row g-3 "
         >
