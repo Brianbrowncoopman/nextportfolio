@@ -2,14 +2,10 @@ import React, { useState, useEffect } from "react";
 import { FaClock } from "react-icons/fa";
 import { WiDaySunny } from "react-icons/wi";
 import LocationInfo from "./footer/Location";
+import Hours from "./footer/Hours";
 
 const Footer = () => {
-  const [time, setTime] = useState("");
-
-  const [temperature, setTemperature] = useState("");
-  const [weather, setWeather] = useState("");
-
-  useEffect(() => {
+  /*useEffect(() => {
     // Obtener la hora actual
     const getCurrentTime = () => {
       const now = new Date();
@@ -29,28 +25,18 @@ const Footer = () => {
     getCurrentTime();
 
     getWeather();
-  }, []);
+  }, []);*/
 
   return (
     <div className="container py-3">
-      <div>
-        <h3>&copy; Brian Brown</h3>
-        <p>2022-{new Date().getFullYear()}</p>
-        <p>Todos los derechos reservados</p>
-      </div>
       <div className="row">
-        <div className="col">
-          <p>
-            <FaClock /> Hora: {time}
-          </p>
+        <div className="col-md-10">
+          <h3>&copy; Brian Brown</h3>
+          <p>2022-{new Date().getFullYear()}</p>
+          <p>Todos los derechos reservados</p>
         </div>
-        <div className="col">
+        <div className="col-md-2">
           <LocationInfo />
-        </div>
-        <div className="col">
-          <p>
-            Temperatura: {temperature} °C - Clima: {weather}
-          </p>
         </div>
       </div>
     </div>
