@@ -28,14 +28,16 @@ const Footer = () => {
   }, []);*/
 
   return (
-    <div className="container py-3">
-      <div className="row">
-        <div className="col-md-10">
+    <div className="container py-1">
+      <div className="row justify-content-center text-center">
+        <div className="col-md-12">
           <h3>&copy; Brian Brown</h3>
           <p>2022-{new Date().getFullYear()}</p>
           <p>Todos los derechos reservados</p>
         </div>
-        <div className="col-md-2">
+      </div>
+      <div className="row justify-content-center text-center mt-2">
+        <div className="col-md-12">
           <LocationInfo />
         </div>
       </div>

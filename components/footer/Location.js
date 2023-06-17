@@ -68,9 +68,9 @@ const LocationInfo = () => {
           onClick={handleLocationClick}
           className=" btn btn-outline-light mb-1"
         >
-          Obtener Ubicación
+          Ubicación
         </button>
-        Ubicación: {location} Temperatura: {temperature}°C Clima: {weather}{" "}
+        {location} {temperature}°C {weather}
       </div>
     </>
   );
