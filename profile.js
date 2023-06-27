@@ -96,6 +96,12 @@ export const proyects = [
     image: "api.png",
     page: "https://apinext-snowy.vercel.app/",
   },
+  {
+    name: "Crud web socket",
+    description: "js socket.io bootstrap ",
+    image: "websocket.png",
+    page: "https://crudsocket-production.up.railway.app/",
+  },
 ];
 
 export const knowledge = [
@@ -162,6 +168,10 @@ export const knowledge = [
   {
     tecnology: "Express.js",
     image: "express.png",
+  },
+  {
+    tecnology: "Socket.io",
+    image: "socket.png",
   },
 ];
 
