@@ -212,4 +212,10 @@ export const juegos = [
     gameImage: "mario.png",
     description: "JavaScript.js",
   },
+  {
+    gameName: "Ajedrez",
+    page: "https://chessjs.vercel.app/",
+    gameImage: "ajedrez.png",
+    description: "JavaScript.js",
+  },
 ];
