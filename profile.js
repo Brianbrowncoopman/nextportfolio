@@ -139,7 +139,7 @@ export const knowledge = [
   },
   {
     tecnology: "Git",
-    image: "Git.png",
+    image: "git.png",
   },
   {
     tecnology: "Github",
