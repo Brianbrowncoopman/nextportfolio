@@ -17,7 +17,7 @@ const Index = () => (
             <div className="row">
               <div className="col-md-3">
                 <img
-                  src="/perfilp.jpg"
+                  src="/bbc.jpg"
                   alt=""
                   className="img-fluid  p-1 mt-4 mb-5 border border-1 rounded"
                 />
