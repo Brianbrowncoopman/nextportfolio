@@ -49,6 +49,19 @@ const Certificados = () => {
                 <p className="carousel-text">JProg || Phaser.js</p>
               </div>
             </div>
+
+            <div className="carousel-item">
+              <div className="d-flex flex-column align-items-center">
+                <img
+                  src="alura logica.jpg"
+                  className="carousel-image border border-3 rounded img-fluid"
+                  alt="..."
+                />
+                <p className="carousel-text">
+                  CURSO LOGICA DE PROGRAMACION || ALURA
+                </p>
+              </div>
+            </div>
           </div>
           <button
             className="carousel-control-prev"

@@ -218,4 +218,16 @@ export const juegos = [
     gameImage: "ajedrez.png",
     description: "JavaScript.js",
   },
+  {
+    gameName: "Stack game",
+    page: "https://stack-game-phi.vercel.app/",
+    gameImage: "stackgame.png",
+    description: "javaScript | Vanilla",
+  },
+  {
+    gameName: "Tetris",
+    page: "https://tetrisvanilla.vercel.app/",
+    gameImage: "tetris.png",
+    description: "javaScript | Vanilla",
+  },
 ];
